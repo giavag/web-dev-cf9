@@ -8,6 +8,7 @@ ul {
     /* Display */
     display: flex;  /* default Horizontal alignment */
     justify-content: center;
+    align-items: center;
     gap: 20px;
 
     /* Visual */
