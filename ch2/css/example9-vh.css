@@ -1,0 +1,9 @@
+.header {
+    height: 200px;
+    border: 1px solid black;
+}
+
+.aueb-img > img {
+/* 95vh σημαινει 95% του vertical height (που συμπεριλαβμανει την address bar) και αφαιρω  200px του .header*/
+    height: calc(95vh - 200px);
+}
