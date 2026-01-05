@@ -1,0 +1,97 @@
+/* Καθαρισμός των default styles του browser */
+* {
+    box-sizing: border-box; /* Πολύ σημαντικό: το padding δεν μεγαλώνει το πλάτος */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2D8BF0; /* Το μπλε φόντο */
+    height: 100vh; /* Όλο το ύψος της οθόνης */
+    display: flex; /* Ενεργοποίηση Flexbox */
+    justify-content: center; /* Κεντράρισμα οριζόντια */
+    align-items: center; /* Κεντράρισμα κάθετα */
+}
+
+/* Ένα container για να κρατάει την κάρτα και το κείμενο από κάτω μαζί */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px; /* Το μέγιστο πλάτος της φόρμας */
+}
+
+/* Η λευκή κάρτα Login */
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Απαλή σκιά */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #808080; /* Γκρι χρώμα τίτλου */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Στυλ για τα πεδία (Inputs) */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #F0F0F0; /* Ανοιχτό γκρι φόντο */
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    outline: none; /* Αφαιρεί το μπλε περίγραμμα όταν γράφεις */
+}
+
+/* Focus εφέ για τα inputs (προαιρετικό) */
+.input-field:focus {
+    background-color: #e6e6e6;
+}
+
+/* Το κουμπί Sign In */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #2D8BF0; /* Ίδιο μπλε με το background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #1a75d2; /* Λίγο πιο σκούρο στο hover */
+}
+
+/* Σύνδεσμος Lost Password */
+.lost-pass {
+    color: #808080;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* Κείμενο κάτω από την κάρτα */
+.signup-text {
+    color: white;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
