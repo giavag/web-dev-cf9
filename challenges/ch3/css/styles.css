@@ -1,0 +1,119 @@
+:root {
+    --full-width: 45vw;
+    --partial-width: 40vw;
+    --full-height: 100vh;
+    --color-light: rgb(213, 211, 211);
+    --color-weight: #fff;
+    --min-height-85vh: 85vh;
+    --min-height-60px: 60px;
+    --min-height-48px: 48px;
+    --color-white: white;
+    --color-bluelight: #2176B1;
+    --color-blueauth: #5479A2;
+    --color-gray: rgb(205, 202, 202, 0.5);
+    --color-bluelink: rgb(42, 100, 163);
+    --font-weight-600: 600;
+}
+
+*, *::after, *::before* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: var(--full-height);
+    background-color: var(--color-light);
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    /* background-color: white; */
+}
+
+.login-gov {
+    background-color: white;
+}
+
+.dflex-sb-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.full-width {
+    width: var(--full-width);
+}
+
+.min-height60 {
+    min-height: var(--min-height-60px);
+}
+
+.min-height48 {
+    min-height: var(--min-height-48px);
+}
+
+.auth-text {
+    background-color: var(--color-blueauth);
+    text-align: center;
+    height: var(--min-height-48px);
+    line-height: var(--min-height-48px);
+    color: var(--color-white);
+    font-weight: var(--font-weight-600);
+}
+
+.font-sans {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-strong {
+    font-weight: bold;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.line {
+    width: var(--full-width);
+    border-top: 1px solid var(--color-light);
+    margin: 20px 0;
+}
+
+.m-top {
+    margin-top: 10px;
+}
+
+.item-large {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    /* background-color: var(--color-light); */
+}
+
+.no-outline {
+    outline: none;
+}
+
+.color-bluelight {
+    background-color: var(--color-bluelight);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.td-none {
+    text-decoration: none;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
