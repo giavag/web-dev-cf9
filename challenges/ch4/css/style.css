@@ -1,0 +1,120 @@
+:root {
+  --color-gov-blue: #1b3d5f;
+  --color-gov-green: #2e7d32;
+  --color-white: #fff;
+  --color-gray-bg: #f5f5f5;
+  --container-width: 1140px;
+  --color-border-blue: darkblue;
+}
+
+/* Background */
+.bg-blue {
+  background-color: var(--color-gov-blue);
+}
+
+/* Text */
+.text-white {
+  color: var(--color-white);
+}
+
+/* Container */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.d-flex-align-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Κουμπιά */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  /* border-radius: 4px; */
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-green {
+  background-color: var(--color-gov-green);
+  color: var(--color-white);
+}
+
+/* Border */
+.b-bottom {
+  border-bottom: 10px solid var(--color-border-blue);
+}
+
+/* Footer */
+/* --- Footer Styling --- */
+
+/* Γενικές ρυθμίσεις του Footer */
+.footer-section {
+    background-color: var(--color-gray-bg); /* Το ανοιχτό γκρι που ορίσαμε πριν */
+    padding: 30px 0;
+    margin-top: auto; /* Αν χρησιμοποιείς flex στο body, αυτό σπρώχνει το footer κάτω */
+    border-top: 1px solid #e0e0e0; /* Λεπτή γραμμή στο πάνω μέρος */
+    font-size: 0.9rem; /* Μικρότερη γραμματοσειρά από το κυρίως κείμενο */
+}
+
+/* 1. Στυλ για τους συνδέσμους (Links) */
+.footer-links ul {
+    list-style: none; /* Αφαίρεση κουκκίδων */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Κενό ανάμεσα στα links */
+}
+
+/* Utility για λίστα που "διπλώνει" σε μικρές οθόνες */
+.d-flex-wrap {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.footer-links a {
+    color: #005ba8; /* Το χαρακτηριστικό μπλε των links του Gov */
+    text-decoration: none; /* Όχι υπογράμμιση αρχικά */
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Υπογράμμιση μόνο όταν περνάει το ποντίκι */
+}
+
+/* Διαχωριστική γραμμή (προαιρετική, για καθαρό design) */
+.line-separator {
+    height: 1px;
+    background-color: #d1d1d1;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* 2. Στυλ για το κάτω μέρος (Credits & Logo) */
+/* Utility: Space Between και κάθετο κεντράρισμα */
+.d-flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Για να πέφτει το λογότυπο κάτω σε κινητά */
+    gap: 20px;
+}
+
+.implementation-text {
+    color: #555; /* Σκούρο γκρι για το κείμενο */
+    max-width: 600px; /* Για να μην απλώνει πολύ το κείμενο */
+}
+
+.implementation-text a {
+    color: #005ba8;
+    text-decoration: none;
+    font-weight: bold;
+}
