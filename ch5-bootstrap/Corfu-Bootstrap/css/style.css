@@ -1,0 +1,29 @@
+/* .bg-dark {
+  background-color: #006994!important;
+} */
+
+.bg-blue {
+  background-color: #006994;
+}
+
+header {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height: 500px; */
+}
+
+.line {
+  background-color: #006994;
+}
+
+.card-img {
+  height: 250px;
+}
+
+.social a {
+  color: white;
+  font-size: 2rem;
+}
